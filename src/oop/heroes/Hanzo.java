@@ -6,13 +6,13 @@ public class Hanzo extends Hero {
     }
 
     @Override
-    public void takeDamage() {
+    public void doTakeDamage() {
         energy++;
         life--;
     }
 
     @Override
-    public void attack() {
+    public void doAttack() {
         energy -= 5;
     }
 }

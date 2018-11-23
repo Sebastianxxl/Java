@@ -8,14 +8,14 @@ public class Blaze extends Hero {
 
 
     @Override
-    public void takeDamage() {
+    public void doTakeDamage() {
         life--;
         energy++;
 
     }
 
     @Override
-    public void attack() {
+    public void doAttack() {
         energy -= 4;
     }
 }

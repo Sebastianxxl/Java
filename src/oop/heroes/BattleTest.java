@@ -4,7 +4,7 @@ public class BattleTest {
     public static void main(String[] args) {
 
         Warrior batman = new Warrior ("Batman",10,10);
-        Mage joker = new Mage ("Joker", 8,12);
+        Mage joker = new Mage ("Joker", 8,0);
         Blaze spiderman = new Blaze ("Spiderman", 15, 14);
         Diablo wolverine = new Diablo ("Wolverine",20,17);
         Hanzo thor = new Hanzo ("Thor",23,19);
@@ -20,6 +20,12 @@ public class BattleTest {
         battle(batman, joker);
         battle(wolverine, thor);
         battle(spiderman, joker);
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void battle(Hero aHero, Hero anotherHero) {
