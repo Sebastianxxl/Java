@@ -1,19 +1,18 @@
 package oop.heroes;
 
-public class Mage extends Hero {
-    public Mage( String name, Integer energy, Integer life) {
+public class Hanzo extends Hero {
+    public Hanzo(String name, Integer energy, Integer life) {
         super(name, energy, life);
     }
 
     @Override
     public void takeDamage() {
-        life--;
         energy++;
-
+        life--;
     }
 
     @Override
     public void attack() {
-        energy -= 3;
+        energy -= 5;
     }
 }

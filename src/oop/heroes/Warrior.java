@@ -1,9 +1,10 @@
 package oop.heroes;
 
-public class Warrior extends Hero{
+public class Warrior extends Hero {
 
-    public Warrior(Integer energy, Integer life) {
-        super(energy, life);
+    public Warrior(String name, Integer energy, Integer life) {
+
+        super(name,energy, life);
     }
 
     @Override

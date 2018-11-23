@@ -1,9 +1,11 @@
 package oop.heroes;
 
-public class Mage extends Hero {
-    public Mage( String name, Integer energy, Integer life) {
+public class Blaze extends Hero {
+
+    public Blaze(String name,Integer energy, Integer life) {
         super(name, energy, life);
     }
+
 
     @Override
     public void takeDamage() {
@@ -14,6 +16,6 @@ public class Mage extends Hero {
 
     @Override
     public void attack() {
-        energy -= 3;
+        energy -= 4;
     }
 }
