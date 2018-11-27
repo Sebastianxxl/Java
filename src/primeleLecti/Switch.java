@@ -1,3 +1,5 @@
+package primeleLecti;
+
 import java.util.Scanner;
 
 public class Switch {

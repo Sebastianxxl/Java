@@ -1,3 +1,5 @@
+package primeleLecti;
+
 public class Data {
     public static void main(String[] args) {
         int myAge;

@@ -1,19 +1,22 @@
 package oop.streams;
 
+import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+
 
 public class Read {
     public static void main(String[] args) {
         try {
-            FileInputStream stream = new FileInputStream("number.txt");
-
-            int numar;
-            while((numar = stream.read())!= -1) {
+            BufferedReader reader = new BufferedReader(new FileReader("src/oop/streams/numbers.txt"));
+            String numar;
+            while ((numar = reader.readLine()) != null) {
                 System.out.println(numar);
             }
 
-            stream.close();
-        } catch (Exception e) {
+            reader.close();
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

@@ -1,3 +1,5 @@
+package primeleLecti;
+
 import java.sql.SQLOutput;
 
 public class Ascii {
