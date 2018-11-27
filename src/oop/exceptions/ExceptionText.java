@@ -2,7 +2,7 @@ package oop.exceptions;
 
 public class ExceptionText {
     public static void main(String[] args) {
-       int y = 10;
+        int y = 10;
         try {
             int x = 1 / 0;
             y++;
